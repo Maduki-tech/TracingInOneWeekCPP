@@ -69,7 +69,6 @@ int main(int argc, char *argv[]) {
     const vec3 vertical(0, viewport_height, 0);
     const point3 lower_left_corner =
         origin - horizontal / 2 - vertical / 2 - vec3(0, 0, focal_length);
-    std::cout << lower_left_corner << std::endl;
 
     std::ofstream file("image.ppm", std::ios::out | std::ios::binary);
 
